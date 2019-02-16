@@ -1,0 +1,24 @@
+<div>
+  <h4>Pipe Demo Component</h4>
+
+  Message: {{message | titlecase}}
+  <br>
+  Today is: {{today | date:'dd/MMM/yyyy hh:mm:ss'}}
+  <br>
+  Book Details: {{book | json}}
+  <br>
+  The price is: {{price | currency:'Rupees '}}
+  <br>
+  <label>
+    Enter some text:
+    <input type="text" [(ngModel)]="myText">
+  </label>
+  <br>
+  Original text: {{myText}}
+  <br>
+  Reversed text: {{myText | reversetext}}
+  <br>
+  Piglatin: {{myText | piglatin }}
+  <br>
+  html: {{html}}
+</div>

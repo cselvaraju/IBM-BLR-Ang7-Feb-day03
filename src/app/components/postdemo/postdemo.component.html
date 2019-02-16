@@ -1,0 +1,14 @@
+<div>
+  <h4>List of Posts</h4>
+  <button (click)="createPost()">Create Post</button>
+  <div *ngIf="posts">
+    <div id="post" *ngFor="let post of posts">
+        Id: {{post.id}} <br>
+        Title: {{post.title}} <br>
+        Body: {{post.body}}
+    </div>
+  </div>
+  <div *ngIf="!posts">
+    <img src="/assets/fidget-spinner-loading.gif" alt="Loading...">
+  </div>
+</div>
